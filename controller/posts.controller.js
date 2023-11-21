@@ -28,6 +28,7 @@ const postsController = {
         }
     },
     create: async (req, res) => {
+        console.log(req.body);
         try {
             const { title, content } = req.body
             const sql = "insert into posts (title, content) values (?, ?)"
